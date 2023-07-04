@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>MI-Motion</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+  <style>
+    .container {
+                zoom: 1;
+                margin-left: auto;
+                margin-right: auto;
+                vertical-align: middle;
+                width: 100%;
+                max-width: 1000px;
+            }
+    .title {
+                font-size: 1.75rem;
+                font-weight: 700;
+                line-height: 1.125;
+                letter-spacing: -.05em;
+                margin-bottom: 1.5rem;
+                margin-top: 1.5rem;
+                color: rgba(0,0,0,.7);
+                text-align: center;
+            }
+    .ul_css {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      display: block;
+      list-style-type: disc;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      padding-inline-start: 40px;
+    }
+    .li_css {
+      display: list-item;
+      text-align: -webkit-match-parent;
+    }
+  </style>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">The MI-Motion Dataset and Benchmark for 3D Multi-Person Motion Prediction</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <!-- <span class="author-block">
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Xiaogang Peng<sup>1</sup>,</a></span>
+                <span class="author-block">
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Xiao Zhou<sup>1</sup>,</a></span>
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Yikai Luo<sup>1</sup>,</a>
+                  </span>
+                  <span class="author-block">
+                    <a href="FOURTH AUTHOR PERSONAL LINK" target="_blank">Hao Wen<sup>2</sup>,</a>
+                  </span>
+                  <span class="author-block">
+                    <a href="FIFTH AUTHOR PERSONAL LINK" target="_blank">Zizhao Wu<sup>1*</sup></a>
+                  </span> -->
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Anonymous submission</span>
+
+                  </div>
+
+          
+                  <!-- <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>Hangzhou Dianzi University, China<br><sup>2</sup>National University of Defense Technology, China</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Correspoingd Author</small></span>
+                  </div> -->
+
+                  <!-- Arxiv PDF link -->
+                  <!-- <div class="column has-text-centered">  
+                    <div class="publication-links">                  
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span> -->
+
+                    <!-- Supplementary PDF link -->
+                    <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                         class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        /<!- Your video here -->
+        <!-- <source src="static/videos/banner_video.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        MI-Motion Dataset
+      </h2>
+    </div>
+  </div>
+</section> --> 
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Dataset</h2>
+        <div class="content has-text-justified">
+          <p>
+                Our MI-Motion Dataset comprises approximately 167k sequence frames involving 3~6 subjects. Each subject is represented by 20 body 3D keypoints, 
+            and performed interactions with other individuals with different interaction levels. To simulate various activity scenes, 
+            we divide the dataset into five subsets: park, street, indoor, special locations, and complex crowd.
+          </p>
+          <img src="static/images/teaser.png">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+<div class="container">
+
+  <div align="center"><h2 class="title">Accessing the dataset</h2></div>
+  <p>
+      See <a href="https://github.com/mi-motion/mi-motion.github.io/blob/main/README.md">README</a> for detailed instructions.
+  </p>
+  <br>
+
+  <div align="center"><h2 class="title">Benchmark</h2></div>
+  <p>
+      Please see our benchmark results on short-term and long-term prediction in the paper.
+      We proivde our benchmark code and other baseline codes in supplementary material. For ultra-long-term prediction, we attach the visualization results below.
+  </p>
+  <br>
+</ul>
+</div>
+<table class="container">
+  <!-- <div align="center"><h2 class="title">Accessing the dataset</h2></div> -->
+  <tr>
+    <th align="center" >    </th>
+    <th align="center" style="font-style:italic;font-weight: lighter;font-size: large;">Park</th> <!--th标签：表格头，内容居中，加粗显示-->
+    <th align="center" style="font-style:italic;font-weight: lighter;font-size: large;">Indoor</th>
+    <th align="center" style="font-style:italic;font-weight: lighter;font-size: large;">Street</th>
+    <th align="center" style="font-style:italic;font-weight: lighter;font-size: large;">Special Locations</th>
+    <th align="center" style="font-style:italic;font-weight: lighter;font-size: large;">Complex Crowd</th>
+  </tr>
+  <tr>
+    <th style="text-align: center;vertical-align: middle;">HRI</th>
+    <td>
+      <img src="static/gifs/HRI/Park/pred_img_015_original.gif" border= "0">
+    </td>
+    <td>
+      <img src="static/gifs/HRI/Indoor/pred_img_020_original.gif" border= "0">
+    </td>
+    <td>
+      <img src="static/gifs/HRI/Street/pred_img_025_original.gif" border= "0">
+    </td>
+    <td>
+      <img src="static/gifs/HRI/Special_Locations/pred_img_001_original.gif" border= "0">
+    </td>
+    <td>
+      <img src="static/gifs/HRI/Complex_Crowd/pred_img_030_original.gif" border= "0">
+    </td>
+  </tr>
+  <tr>
+    <th style="text-align: center;vertical-align: middle;">MRT</th>
+    <td>
+      <img src="static/gifs/MRT/Park/pred_img_015_original.gif" border= "0">
+    </td>
+    <td>
+      <img src="static/gifs/MRT/Indoor/pred_img_020_original.gif" border= "0">
+    </td>
+    <td>
+      <img src="static/gifs/MRT/Street/pred_img_025_original.gif" border= "0">
+    </td>
+    <td>
+      <img src="static/gifs/MRT/Special_Locations/pred_img_001_original.gif" border= "0">
+    </td>
+    <td>
+      <img src="static/gifs/MRT/Complex_Crowd/pred_img_030_original.gif" border= "0">
+    </td>
+  </tr>
+  <tr>
+    <th style="text-align: center;vertical-align: middle;">TBIFormer</th>
+    <td>
+      <img src="static/gifs/TBIFormer/Park/pred_img_015_original.gif" border= "0">
+    </td>
+    <td>
+      <img src="static/gifs/TBIFormer/Indoor/pred_img_020_original.gif" border= "0">
+    </td>
+    <td>
+      <img src="static/gifs/TBIFormer/Street/pred_img_025_original.gif" border= "0">
+    </td>
+    <td>
+      <img src="static/gifs/TBIFormer/Special_Locations/pred_img_001_original.gif" border= "0">
+    </td>
+    <td>
+      <img src="static/gifs/TBIFormer/Complex_Crowd/pred_img_030_original.gif" border= "0">
+    </td>
+  </tr>
+  <tr>
+    <th style="text-align: center;vertical-align: middle;">SocialTGCN</th>
+    <td>
+      <img src="static/gifs/SocialTGCN/Park/pred_img_015_original.gif" border= "0">
+    </td>
+    <td>
+      <img src="static/gifs/SocialTGCN/Indoor/pred_img_020_original.gif" border= "0">
+    </td>
+    <td>
+      <img src="static/gifs/SocialTGCN/Street/pred_img_025_original.gif" border= "0">
+    </td>
+    <td>
+      <img src="static/gifs/SocialTGCN/Special_Locations/pred_img_001_original.gif" border= "0">
+    </td>
+    <td>
+      <img src="static/gifs/SocialTGCN/Complex_Crowd/pred_img_030_original.gif" border= "0">
+    </td>
+  </tr>
+  <tr>
+    <th style="text-align: center;vertical-align: middle;">GT</th>
+    <td>
+      <img src="static/gifs/GT/Park/gt_img_015_original.gif" border= "0">
+    </td>
+    <td>
+      <img src="static/gifs/GT/Indoor/gt_img_020_original.gif" border= "0">
+    </td>
+    <td>
+      <img src="static/gifs/GT/Street/gt_img_025_original.gif" border= "0">
+    </td>
+    <td>
+      <img src="static/gifs/GT/Special_Locations/gt_img_001_original.gif" border= "0">
+    </td>
+    <td>
+      <img src="static/gifs/GT/Complex_Crowd/gt_img_030_original.gif" border= "0">
+    </td>
+    
+  </tr>
+</table>
+
+
+
+<br>
+
+
+<!-- Image carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        
+        <dl>
+          <dt>
+            <img src="static/gifs/HRI/Park/pred_img_015.gif" border="0">
+          </dt>
+          <dt>
+            <img src="static/gifs/HRI/Indoor/pred_img_020.gif" border="0">
+          </dt>
+          <dt>
+            <img src="static/gifs/HRI/Street/pred_img_025.gif" border="0">
+          </dt>
+          <dt>
+            <img src="static/gifs/HRI/Special_Locations/pred_img_001.gif" border="0">
+          </dt>
+          <dt>
+            <img src="static/gifs/HRI/Complex_Crowd/pred_img_030.gif" border="0">
+          </dt>
+        </dl>
+        <h2 class="subtitle has-text-centered">
+          Park
+        </h2>
+      </div>
+      <div class="item">
+        
+        <img src="static/images/QualityVis_Indoor.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Indoor
+        </h2>
+      </div>
+      <div class="item">
+        
+        <img src="static/images/QualityVis_Street.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+         Street
+       </h2>
+     </div>
+     <div class="item">
+      
+      <img src="static/images/QualityVis_SpecialLocations.png" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Special_Locations
+      </h2>
+    </div>
+  </div>
+</div>
+</div>
+</section> -->
+<!-- End image carousel -->
+
+
+
+
+<!-- Youtube video -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+       Paper video. -->
+      <!-- <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+             Youtube embed code here -->
+            <!-- <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>  -->
+<!-- End youtube video -->
+
+
+<!-- Video carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Another Carousel</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            Your video file here -->
+            <!-- <source src="static/videos/carousel1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+             Your video file here -->
+            <!-- <source src="static/videos/carousel2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+            Your video file here -->
+            <!-- <source src="static/videos/carousel3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End video carousel -->
+
+
+
+
+
+
+<!-- Paper poster -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section> -->
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <!-- <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section> -->
+<!--End BibTex citation -->
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
+            
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
